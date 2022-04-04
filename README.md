@@ -2,7 +2,7 @@
 
 ## FOOTBALL 
 
-AUTHOR: ART ALIU
+# AUTHOR: ART ALIU
 
 
 

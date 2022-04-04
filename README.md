@@ -1,1 +1,5 @@
 # Project_work
+
+I propose to create an app that allows the user to find out information on football players and the clubs they play for in the Premier League. Users will thus be able to input details for the players they choose to know information about including their football team, player age and player number.
+
+The implicit CRUD functionality of this app will include:

@@ -1,6 +1,6 @@
 # Project_work
 
-FOOTBALL 
+## FOOTBALL 
 
 AUTHOR: ART ALIU
 
@@ -23,4 +23,6 @@ Edit the details of the items in the database
 
 DELETE:
 Remove any item from the database
+
+Planning, Design and Project Tracking
 

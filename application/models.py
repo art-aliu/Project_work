@@ -3,7 +3,7 @@ from application import db
 class Football_Teams(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name_of_club = db.Column(db.String(30), nullable=False)
-    manager = bd.Column(db.String(30), nullable=False)
+    manager = db.Column(db.String(30), nullable=False)
     players = db.relationship('player', backref='football_teambr')
 
 

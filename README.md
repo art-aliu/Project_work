@@ -38,7 +38,7 @@ As shown in the ERD, the app models a one to many relationship between the footb
 
 ## Risk Assessment
 
-![image](https://user-images.githubusercontent.com/101266740/161755308-baa34234-505d-488b-9cda-783e82698398.png)
+![image](https://user-images.githubusercontent.com/101266740/161800431-4227ea6f-369f-428a-8930-f8a55291ea9d.png)
 
 ## Project Tracking
 

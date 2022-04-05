@@ -1,6 +1,6 @@
 # Project_work
 
-## FOOTBALL app 
+## PREMIER LEAGUE TOP 6 FOOTBALL APP 
 
 ### AUTHOR: ART ALIU
 
@@ -32,7 +32,13 @@ Remove any item from the database
 
 I started with a basic entity relationship diagram designed around the relationships I expected these entities to have. My initial design looked like this:
 
+![image](https://user-images.githubusercontent.com/101266740/161767472-2b8987d3-47e3-41b4-bcce-73e56e8fbda4.png)
+
+As shown in the ERD, the app models a one to many relationship between the football players and thier football clubs.This allows the user to see the relationship between the two which will show the football clubs having many different players.
+
 ## Risk Assessment
 
 ![image](https://user-images.githubusercontent.com/101266740/161755308-baa34234-505d-488b-9cda-783e82698398.png)
+
+## Project Tracking
 

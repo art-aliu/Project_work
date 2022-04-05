@@ -28,7 +28,11 @@ Remove any item from the database
 
 ## Planning, Design and Project Tracking
 
-# ERD
+## ERD
 
 I started with a basic entity relationship diagram designed around the relationships I expected these entities to have. My initial design looked like this:
+
+## Risk Assessment
+
+![image](https://user-images.githubusercontent.com/101266740/161755308-baa34234-505d-488b-9cda-783e82698398.png)
 

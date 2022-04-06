@@ -1,0 +1,30 @@
+{% extends 'navbar.html' %}
+
+{% block title %}
+<title>Add a Football Team here</title>
+{% endblock %}
+
+{% block content %}
+<div class='form'>
+    <h1>Add Football Team</h1>
+    <br>
+    <form method='POST' action=''>
+
+        {{ form.hidden_tag() }}
+    
+        {{ form.football_team_name.label }}
+        {{ form.football_team_name }}
+        {{ form.manager.label }}
+        {{ form.manager }}
+            {% if form.player_name.errors %}
+        <div class='error'>
+            {% for error in form.football_team_name.errors %}
+            <span>{{ error }}</span>
+            {% endfor %}
+        </div>
+        {% endif %}
+        <br>
+        {{ form.submit }}
+    </form>
+</div>
+{% endblock %}

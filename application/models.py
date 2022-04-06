@@ -3,7 +3,7 @@
 from application import db
 from application import app
 from flask_wtf import FlaskForm
-from wtforms import StringField, IntegerField, SubmitField
+from wtforms import StringField, IntegerField, SubmitField, SelectField
 
 class Football_Teams(db.Model):
     id = db.Column(db.Integer, primary_key=True)

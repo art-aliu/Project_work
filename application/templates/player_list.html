@@ -1,0 +1,12 @@
+{% extends 'navbar.html' %}
+
+{% block title %}
+<title>Players list</title>
+{% endblock %}
+
+{% block content %}
+<h2> Current playerlist </h2>
+{% for players in all_players %}
+    {{player.playerbr.football_team_name}} {{player.id}} {{ player_name  }} </p><br>
+{% endfor %}
+{% endblock %}

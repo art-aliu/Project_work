@@ -4,7 +4,7 @@
 <title>Add a Football Team here</title>
 {% endblock %}
 
-{% block content %}
+{% block body %}
 <div class='form'>
     <h1>Add Football Team</h1>
     <br>
@@ -14,9 +14,7 @@
     
         {{ form.football_team_name.label }}
         {{ form.football_team_name }}
-        {{ form.manager.label }}
-        {{ form.manager }}
-            {% if form.player_name.errors %}
+        {% if form.football_team_name.errors %}
         <div class='error'>
             {% for error in form.football_team_name.errors %}
             <span>{{ error }}</span>
@@ -27,4 +25,5 @@
         {{ form.submit }}
     </form>
 </div>
+<br>
 {% endblock %}

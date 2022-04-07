@@ -1,5 +1,5 @@
 from application import db
-from application.models import Football_Teams, Players
+from application.models import Football_Team, Player
 from application import models
 
 db.drop_all()

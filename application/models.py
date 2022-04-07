@@ -1,35 +1,33 @@
 
-
 from application import db
 from application import app
 from flask_wtf import FlaskForm
 from wtforms import StringField, IntegerField, SubmitField, SelectField
 
-class Football_Teams(db.Model):
+class Football_Team(db.Model):
+    __tablename__ = 'football_team'
     id = db.Column(db.Integer, primary_key=True)
-    name_of_club = db.Column(db.String(30), nullable=False)
-    manager = db.Column(db.String(30), nullable=False)
-    players = db.relationship('player', backref='football_teambr')
+    football_team_name = db.Column(db.String(45), nullable=False)
+    player = db.relationship('Player', backref='football_teamsbr')
 
-class Football_TeamsForm(FlaskForm):
-    name_of_club = StringField('Enter the game title')
-    manager = StringField ('Enter the manager name')
-    submit = SubmitField ('submit')
+class Football_TeamForm(FlaskForm):
+    football_team_name = StringField('Enter the football team name')
+    submit = SubmitField ('Submit')
 
-
-class Players(db.Model):
+class Player(db.Model):    
+    __tablename__ = 'player'
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(30), nullable=False)
+    player_name = db.Column(db.String(45), nullable=False)
     player_number = db.Column(db.Integer, nullable=False)
     player_age = db.Column(db.Integer, nullable=False)
     football_team_id = db.Column(db.Integer, db.ForeignKey('football_team.id'), nullable=False)
 
-class PlayersForm(FlaskForm):
-    name = StringField ('Enter your name')
-    player_number = IntegerField ('Enter the players number')
-    player_age = IntegerField ('Enter the players age')
-    submit = SubmitField ('submit')
+class PlayerForm(FlaskForm):
+    player_name = StringField ('Enter player name')
+    player_number = IntegerField ('Enter the player number')
+    player_age = IntegerField ('Enter the player age')
+    football_team_name = SelectField ('Football Club', choices = [])
+    submit = SubmitField ('Submit')
 
-if __name__=='__main__':
-    app.run(debug=True, host='0.0.0.0')
+
 

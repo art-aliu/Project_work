@@ -47,12 +47,22 @@ def delete(player_name):
     delete_player = Player.query.filter_by(player_name=player_name).first()
     db.session.delete(delete_player)
     db.session.commit()
-    return redirect(url_for('player names'))
+    return redirect(url_for('player'))
 
-@app.route('/edit_football_teams')
+# @app.route('/delete_player/<player_name>')
+# def delete_player(player_name):
+#     deleted_player = db.session.query(Player).filter_by(player_name=player_name).first()
+#     if deleted_player:
+#         db.session.delete(deleted_player)
+#         db.session.commit()
+#         return redirect('/players')
+#     else:
+#         return redirect('/players')
+
+@app.route('/edit_football_team')
 def edit():
     all_football_teams = Football_Team.query.all()
-    return render_template('edit_football_teams.html', all_football_teams=all_football_teams)
+    return render_template('edit_football_team.html', all_football_teams=all_football_teams)
 
 '''this creates a route allowing one specific football team to be edited'''
 

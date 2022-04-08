@@ -3,6 +3,8 @@ from application import db
 from application import app
 from flask_wtf import FlaskForm
 from wtforms import StringField, IntegerField, SubmitField, SelectField
+from wtforms.validators import DataRequired
+
 
 class Football_Team(db.Model):
     __tablename__ = 'football_team'
@@ -10,9 +12,8 @@ class Football_Team(db.Model):
     football_team_name = db.Column(db.String(45), nullable=False)
     player = db.relationship('Player', backref='football_teamsbr')
 
-class Football_TeamForm(FlaskForm):
-    football_team_name = StringField('Enter the football team name')
-    submit = SubmitField ('Submit')
+def __repr__(self):
+        return 'Choose {}'.format(self.football_team_name)
 
 class Player(db.Model):    
     __tablename__ = 'player'
@@ -22,7 +23,13 @@ class Player(db.Model):
     player_age = db.Column(db.Integer, nullable=False)
     football_team_id = db.Column(db.Integer, db.ForeignKey('football_team.id'), nullable=False)
 
-class PlayerForm(FlaskForm):
+
+class AddFootball_TeamForm(FlaskForm):
+    football_team_name = StringField('Enter the football team name', validators=[DataRequired()])
+    submit = SubmitField ('Submit the name')
+
+
+class AddPlayerForm(FlaskForm):
     player_name = StringField ('Enter player name')
     player_number = IntegerField ('Enter the player number')
     player_age = IntegerField ('Enter the player age')

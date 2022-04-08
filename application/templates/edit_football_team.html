@@ -1,0 +1,12 @@
+{% extends 'navbar.html' %}
+
+{% block title %}
+<title>Football Teams</title>
+{% endblock %}
+
+{% block content %}
+<h2> Current football teams </h2>
+{% for football_teams in all_football_teams %}.
+    {{football_team.football_team_name}} <a href="{{ url_for('edit_football_team', football_team_name = football_team.football_team_name) }}"><button type="button">edit</button></a></p><br>
+{% endfor %}
+{% endblock %}

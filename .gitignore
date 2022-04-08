@@ -1,0 +1,6 @@
+_pycache_ 
+venv
+.casche
+.gnupg
+.local
+.wget-hsts

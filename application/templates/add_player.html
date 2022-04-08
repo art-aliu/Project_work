@@ -2,7 +2,7 @@
 {% extends 'navbar.html' %}
 
 {% block title %}
-<title>Add an new player here</title>
+<title>Add a new player here</title>
 {% endblock %}
 
 {% block content %}
@@ -15,8 +15,8 @@
 
         {{ form.player_name.label }}
         {{ form.player_name }}
-        {{ form.player_age.label }}
-        {{ form.player_age }}
+        {{ form.football_team_name.label }}
+        {{ form.football_team_name }}
         <!--Here, we want our page to display any errors raised. The if statement checks if a ValidationError object exists and if so, present the message-->
         {% if form.player_name.errors %}
         <div class='error'>

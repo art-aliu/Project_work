@@ -9,12 +9,12 @@
     <h1>Add Football Team</h1>
     <br>
     <form method='POST' action=''>
-
+        <!--The hidden tag here is necessary for CSRF protection -->
         {{ form.hidden_tag() }}
     
         {{ form.football_team_name.label }}
         {{ form.football_team_name }}
-        
+
         {% if form.football_team_name.errors %}
         <div class='error'>
             {% for error in form.football_team_name.errors %}

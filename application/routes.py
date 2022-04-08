@@ -27,7 +27,7 @@ def add_player():
     form = AddPlayerForm()
     form.football_team_name.choices = [(football_team.id, football_team.football_team_name) for football_team in Football_Team.query.order_by(Football_Team.football_team_name).all()]    
     if form.validate_on_submit():
-        new_player_name = Player(player_name=form.player_name.data, player_number=form.player_number.data, player_age=form.player_age.data, football_team_id = form.football_team_name.data)  
+        new_player_name = Player(player_name=form.player_name.data, football_team_id = form.football_team_name.data)  
         db.session.add(new_player_name)
         db.session.commit()
         return render_template('index.html', message="Player Added")
@@ -42,16 +42,6 @@ def player():
 
 # route created to delete players from database
 
-@app.route('/delete_player/<name>')
-def delete_player(name):
-    deleted_player = db.session.query(player).filter_by(name=name).first()
-    if deleted_player:
-        db.session.delete(deleted_player)
-        db.session.commit()
-        return redirect('/players')
-    else:
-        return redirect('/players')
-
 @app.route('/delete/<player_name>', methods = ['GET', 'DELETE'])
 def delete(player_name):
     delete_player = Player.query.filter_by(player_name=player_name).first()
@@ -62,8 +52,9 @@ def delete(player_name):
 @app.route('/edit_football_teams')
 def edit():
     all_football_teams = Football_Team.query.all()
-
     return render_template('edit_football_teams.html', all_football_teams=all_football_teams)
+
+'''this creates a route allowing one specific football team to be edited'''
 
 @app.route('/edit_one_football_team/<football_team_name>', methods = ['GET', 'POST'])
 def edit_football_team(football_team_name):

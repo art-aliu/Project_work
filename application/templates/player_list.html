@@ -10,11 +10,3 @@
     {{players.playersbr.football_team_name}} {{ player.player_name  }} <a href="{{ url_for('delete', player_name = player.player_name) }}"><button type="button">delete</button></a></p><br>
 {% endfor %}
 {% endblock %}
-
-
-<!-- {% block content %}
-<h2> Current list of players </h2>
-{% for players in all_players %}
-    {{player.playerbr.football_team_name}} {{player.id}} {{ player_name }}  {{ player_number }} {{ player_age }} </p><br>
-{% endfor %}
-{% endblock %} -->

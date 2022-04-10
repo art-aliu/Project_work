@@ -95,11 +95,11 @@ As seen below, the app passes all the tests run. The tests can be found in the t
 
 ## Future Improvements
 
-> Allow the user to implement different information about the football team/player other than just their names
+  Allow the user to implement different information about the football team/player other than just their names
 - for example: adding player number, manager of the club, etc
-> Make the app more appealing and eye-catching. The aesthetics of an app are very important as it also makes it easier for the user to understand.
+  Make the app more appealing and eye-catching. The aesthetics of an app are very important as it also makes it easier for the user to understand.
 - this could have been done by being more creative with the use of bootstrap
-> Use famous football imagery to add an extra dimension to the app by making it more aesthetically pleasing
+  Use famous football imagery to add an extra dimension to the app by making it more aesthetically pleasing
 
 ## Acknowledgements
 

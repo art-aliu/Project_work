@@ -8,7 +8,7 @@
 
 The brief provided to us for this project sets the following out as its overall objective: "To create a CRUD application with utilisation of supporting tools, methodologies and technologies that encapsulate all core modules covered during training."
 
-I propose to create an app that allows the user to find out information on football players and the clubs they play for in the Premier League. Users will thus be able to input details for the players they choose to know information about including their football team, player age and player number.
+I propose to create an app that allows the user to find out information on football players and the clubs they play for in the Premier League. Users will thus be able to input a football team of thier choice and add players to that football teams to show the link between the two. I will then have a section showing list of players and thier associated football teams
 
 The implicit CRUD functionality of this app will include:
 
@@ -26,11 +26,10 @@ UPDATE:
 - Edit the name of the football team in the database
 - (satisfies update)
 
-
 DELETE:
 - Remove any player from the database
 - (satisfies delete)
-- 
+
 ## Planning, Design and Project Tracking
 
 ## ERD
@@ -53,7 +52,9 @@ Image taken from images can be found on the link above
 
 ## Risk Assessment
 
-![image](https://user-images.githubusercontent.com/101266740/162636443-c55cb17c-3484-4b0a-a560-ab38083034c6.png)
+Risk assessment revealing possible threats to the project
+
+![image](https://user-images.githubusercontent.com/101266740/162637794-71f5f53d-c323-435e-b6d0-2bdcb5bd0081.png)
 
 ## Project Tracking
 
@@ -73,7 +74,7 @@ Each of these six sections, showing the different elements of the project.
 
 ## Front End
 
-The entry point for the app takes you to the home page via a very simple url. The home page directs the user to firstly use the menu option 'Add Football Team' to add a team. The navigation bar was done throught bootstrap.
+The entry point for the app takes you to the home page via a very simple url. The home page directs the user to firstly use the menu option 'Add Football Team' to add a team. The navigation bar was done through bootstrap.
 
 ![image](https://user-images.githubusercontent.com/101266740/162620179-47783531-0167-4622-9c9f-3a852171cfe9.png)
 

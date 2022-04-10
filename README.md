@@ -36,6 +36,15 @@ I started with a basic entity relationship diagram designed around the relations
 
 As shown in the ERD, the app models a one to many relationship between the football players and thier football clubs.This allows the user to see the relationship between the two which will show the football clubs having many different players.
 
+![image](https://user-images.githubusercontent.com/101266740/162635763-379e387e-5b77-4acb-83c3-78180661d334.png)
+
+## CI Pipeline
+
+Pictured above is the continuous integration pipeline with the associated frameworks. This pipeline shows the simple development-to-deployment by automating the integration process
+
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fdzone.com%2Farticles%2Flearn-how-to-setup-a-cicd-pipeline-from-scratch&psig=AOvVaw1uEVnRuRbUSCxyVYuHBtwP&ust=1649704018981000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCNCfgciYivcCFQAAAAAdAAAAABAD
+Image taken from images can be found on the link above
+
 ## Risk Assessment
 
 ![image](https://user-images.githubusercontent.com/101266740/161800431-4227ea6f-369f-428a-8930-f8a55291ea9d.png)

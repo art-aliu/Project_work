@@ -86,7 +86,15 @@ From this page the user can now see the current list of football teams that have
 
 ![image](https://user-images.githubusercontent.com/101266740/162620025-c01550b6-1a33-4e0a-b1e6-ec2be9e3ea52.png)
 
+## Testing and Automation
 
 
+## Future Improvements
+
+> Allow the user to implement different information about the football team/player other than just their names
+- for example: adding player number, manager of the club, etc
+> Make the app more appealing and eye-catching. The aesthetics of an app are very important as it also makes it easier for the user to understand.
+- this could have been done by being more creative with the use of bootstrap
+> Use famous football imagery to add an extra dimension to the app by making it more aesthetically pleasing
 
 

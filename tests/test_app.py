@@ -5,19 +5,19 @@ from flask_testing import TestCase
 
 class TestBase(TestCase):
     def create_app(self):
-        app.config.update(SQLALCHEMY_DATABASE_URI="sqlite:///test.db", WTF_CSRF_ENABLED=False)
+        app.config.update(SQLALCHEMY_DATABASE_URI="sqlite:///test.db", WTF_CSRF_ENABLED=False, SQLALCHEMY_POOL_SIZE = None, SQLALCHEMY_POOL_TIMEOUT = None)
         return app
 
 # app.config.update({'SQLALCHEMY_POOL_SIZE': None,'SQLALCHEMY_POOL_TIMEOUT': None})
 
-def setUp(self):
+    def setUp(self):
         db.create_all()
 
         db.session.add(Football_Team(football_team_name="Liverpool"))
         db.session.add(Football_Team(football_team_name="Chelsea"))
         
-        db.session.add(Player(player_name="Mane"))
-        db.session.add(Player(player_name="Henderson")) 
+        db.session.add(Player(player_name="Mane", football_team_id = 1))
+        db.session.add(Player(player_name="Henderson", football_team_id = 2)) 
 
 
         # test_football_team = Football_Team(football_team_name = "Barcelona")
@@ -27,7 +27,7 @@ def setUp(self):
 
         db.session.commit()
 
-def tearDown(self):
+    def tearDown(self):
         db.session.remove()
         db.drop_all()
 
@@ -55,27 +55,20 @@ class TestViews(TestBase):
 
     def test_add_player(self):
         response = self.client.get(url_for('add_player'))
-        self.assertEqual(response.status_code, 500)
+        self.assertEqual(response.status_code, 200)
 
     def test_player(self):
         response = self.client.get(url_for('player'))
-        self.assertEqual(response.status_code, 500)
+        self.assertEqual(response.status_code, 200)
 
     def test_delete(self):
         response = self.client.get(url_for('player'))
-        self.assertEqual(response.status_code, 500)
-
-    # def test_delete_player(self):
-    #     response = self.client.get(url_for('delete_player', name="Mane"))
-    #     response2 = self.client.get(url_for('delete_player', name="Henderson"), follow_redirects=True)
-
-    #     assert "Mane" not in response.data.decode()
-    #     assert "Henderson" in response2.data.decode()
+        self.assertEqual(response.status_code, 200)
 
     def test_edit(self):
         response = self.client.get(url_for('edit'))
-        self.assertEqual(response.status_code, 500)
+        self.assertEqual(response.status_code, 200)
 
     def test_edit_football_team(self):
         response = self.client.get(url_for('edit'))
-        self.assertEqual(response.status_code, 500)      
+        self.assertEqual(response.status_code, 200)      

@@ -11,8 +11,8 @@ class Football_Team(db.Model):
     football_team_name = db.Column(db.String(45), nullable=False)
     football_team_player = db.relationship('Player', backref='playerbr')
 
-def __repr__(self):
-        return 'Choose {}'.format(self.football_team_name)
+# def __repr__(self):
+#         return 'Choose {}'.format(self.football_team_name)
 
 class Player(db.Model):    
     id = db.Column(db.Integer, primary_key=True)

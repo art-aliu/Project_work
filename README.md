@@ -1,6 +1,6 @@
 # Project_work
 
-## PREMIER LEAGUE FOOTBALL APP 
+## FOOTBALL APP 
 
 ### AUTHOR: ART ALIU
 

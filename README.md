@@ -101,4 +101,8 @@ As seen below, the app passes all the tests run. The tests can be found in the t
 - this could have been done by being more creative with the use of bootstrap
 > Use famous football imagery to add an extra dimension to the app by making it more aesthetically pleasing
 
+## Acknowledgements
+
+- Credit to w3schools for their basic navbar HTML code utilising CSS provided by Bootstrap3.
+- Thanks to Earl Gray for his high quality teaching
 

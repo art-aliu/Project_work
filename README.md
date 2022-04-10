@@ -42,3 +42,7 @@ As shown in the ERD, the app models a one to many relationship between the footb
 
 ## Project Tracking
 
+I used Trello to track the progress of the project as seen with the image below.
+The link to the Trello board can found here: https://trello.com/b/JVckaOOB/trello-board
+
+![image](https://user-images.githubusercontent.com/101266740/162619016-bb99fe76-b86d-4a65-bd5a-dd48d2792906.png)

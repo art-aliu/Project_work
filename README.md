@@ -88,6 +88,10 @@ From this page the user can now see the current list of football teams that have
 
 ## Testing and Automation
 
+As seen below, the app passes all the tests run. The tests can be found in the tests folder of the directory.
+
+![image](https://user-images.githubusercontent.com/101266740/162623464-d929227e-ef35-454c-819b-5bc7ce57f670.png)
+
 
 ## Future Improvements
 

@@ -15,17 +15,22 @@ The implicit CRUD functionality of this app will include:
 CREATE:
 - add players
 - add football teams
+- (satisfies create)
 
 READ:
 - view players
 - view football teams
+- (satisfies read)
 
 UPDATE:
-Edit the details of the items in the database
+- Edit the name of the football team in the database
+- (satisfies update)
+
 
 DELETE:
-Remove any item from the database
-
+- Remove any player from the database
+- (satisfies delete)
+- 
 ## Planning, Design and Project Tracking
 
 ## ERD
@@ -34,7 +39,7 @@ I started with a basic entity relationship diagram designed around the relations
 
 ![image](https://user-images.githubusercontent.com/101266740/162502102-90bdfc58-c818-4f0c-803a-fef1d6557dfe.png)
 
-As shown in the ERD, the app models a one to many relationship between the football players and thier football clubs.This allows the user to see the relationship between the two which will show the football clubs having many different players.
+As shown in the ERD, the app models a one to many relationship between the football players and thier football clubs.This allows the user to see the relationship between the two which will show the football clubs having many different players. This will allow the user to create football team players and football teams.
 
 
 ## CI Pipeline
@@ -58,12 +63,12 @@ The link to the Trello board can found here: https://trello.com/b/JVckaOOB/trell
 ![image](https://user-images.githubusercontent.com/101266740/162619016-bb99fe76-b86d-4a65-bd5a-dd48d2792906.png)
 
 My project board is showing each of the stages of my project. As seen by the above illustration, I have broken it down into six parts:
-- Project Resources
-- User Stories
-- To Do Tasks
-- Issues/Risks
-- Testing
-- Done
+- Project Resources: shows the list of requirements
+- User Stories: the users used to describe the app functionality
+- To Do Tasks: things I must complete
+- Issues/Risks: any issues/risks that arose or can arise
+- Testing: once element is created, it's functionality is tested
+- Done: elements that are finished
 Each of these six sections, showing the different elements of the project.
 
 ## Front End
@@ -97,6 +102,8 @@ From this page the user can now see the current list of football teams that have
 ![image](https://user-images.githubusercontent.com/101266740/162620025-c01550b6-1a33-4e0a-b1e6-ec2be9e3ea52.png)
 
 ## Testing and Automation
+
+Pytest is used to run unit tests on the app. These are intended to assert that assuming a specific function is run, the result ought to be a known worth.
 
 If any tests should fail, this should be tracked in the terminal and the changes can then be made to fix the issue
 

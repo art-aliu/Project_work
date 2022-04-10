@@ -71,4 +71,19 @@ class TestViews(TestBase):
 
     def test_edit_football_team(self):
         response = self.client.get(url_for('edit'))
-        self.assertEqual(response.status_code, 200)      
+        self.assertEqual(response.status_code, 200)  
+
+    
+    # def test_add_football_team_non(self):
+    #     response = self.client.get(url_for('add_football_team'))
+
+    #     assert "- Add Football_Team" in response.data.decode()
+
+    # def test_add_football_team(self):
+    #     response = self.client.post(
+    #     url_for('add_football_team'),
+    #     data={"football_team_name": "Liverpool",},
+    #     follow_redirects=True
+    #     )
+
+    #     assert "Football Team Added!" in response.data.decode()

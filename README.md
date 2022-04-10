@@ -36,9 +36,10 @@ I started with a basic entity relationship diagram designed around the relations
 
 As shown in the ERD, the app models a one to many relationship between the football players and thier football clubs.This allows the user to see the relationship between the two which will show the football clubs having many different players.
 
-![image](https://user-images.githubusercontent.com/101266740/162635763-379e387e-5b77-4acb-83c3-78180661d334.png)
 
 ## CI Pipeline
+
+![image](https://user-images.githubusercontent.com/101266740/162635763-379e387e-5b77-4acb-83c3-78180661d334.png)
 
 Pictured above is the continuous integration pipeline with the associated frameworks. This pipeline shows the simple development-to-deployment by automating the integration process
 
@@ -47,7 +48,7 @@ Image taken from images can be found on the link above
 
 ## Risk Assessment
 
-![image](https://user-images.githubusercontent.com/101266740/161800431-4227ea6f-369f-428a-8930-f8a55291ea9d.png)
+![image](https://user-images.githubusercontent.com/101266740/162636443-c55cb17c-3484-4b0a-a560-ab38083034c6.png)
 
 ## Project Tracking
 
@@ -96,6 +97,10 @@ From this page the user can now see the current list of football teams that have
 ![image](https://user-images.githubusercontent.com/101266740/162620025-c01550b6-1a33-4e0a-b1e6-ec2be9e3ea52.png)
 
 ## Testing and Automation
+
+If any tests should fail, this should be tracked in the terminal and the changes can then be made to fix the issue
+
+![image](https://user-images.githubusercontent.com/101266740/162636059-c12c0cec-1df6-4116-809c-26c105e0acbb.png)
 
 As seen below, the app passes all the tests run. The tests can be found in the tests folder of the directory.
 

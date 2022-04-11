@@ -124,6 +124,7 @@ As seen below, the app passes all the tests run. The tests can be found in the t
 
 ## Future Improvements
 
+- As I was unable to install Jenkins due to technical issues, a future improvment would definitely be to make sure Jenkins is used for further testing.
 - Allow the user to implement different information about the football team/player other than just their names
 - for example: adding player number, manager of the club, etc
 - Make the app more appealing and eye-catching. The aesthetics of an app are very important as it also makes it easier for the user to understand.

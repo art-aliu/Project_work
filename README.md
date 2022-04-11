@@ -34,9 +34,13 @@ DELETE:
 
 ## ERD
 
+My inital design looked like the first diagram below however the second diagram below was the actual one used in the project. This change was made as I realised there was no need to overcomplicate the app and it would be much easier for the user to use with less keys.
+
+![image](https://user-images.githubusercontent.com/101266740/162816901-846afa73-25f4-4468-b60a-c8d7c71aafd9.png)
+
 I started with a basic entity relationship diagram designed around the relationships I expected these entities to have. My initial design looked like this:
 
-![image](https://user-images.githubusercontent.com/101266740/162502102-90bdfc58-c818-4f0c-803a-fef1d6557dfe.png)
+![image](https://user-images.githubusercontent.com/101266740/162816517-ea6e52e8-9843-4b58-907c-081b31e18d6b.png)
 
 As shown in the ERD, the app models a one to many relationship between the football players and thier football clubs.This allows the user to see the relationship between the two which will show the football clubs having many different players. This will allow the user to create football team players and football teams.
 

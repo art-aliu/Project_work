@@ -1,5 +1,5 @@
 from application import app, db
-from application.models import Player, Football_Team
+from application.models import Player, Football_Team, AddFootball_TeamForm, AddPlayerForm
 from flask import render_template, redirect, url_for, request
 from flask_testing import TestCase
 
@@ -12,12 +12,21 @@ class TestBase(TestCase):
 
     def setUp(self):
         db.create_all()
+        # test_football_team1 = Football_Team(football_team_name = "Manchester City" )
+        # test_player1 = Player(player_name = "Foden" )
+        # db.session.add(test_football_team1)
+        # db.session.add(test_player1)
+        # db.session.commit()
+
+
+    
 
         db.session.add(Football_Team(football_team_name="Liverpool"))
         db.session.add(Football_Team(football_team_name="Chelsea"))
         
         db.session.add(Player(player_name="Mane", football_team_id = 1))
         db.session.add(Player(player_name="Henderson", football_team_id = 2)) 
+
 
 
         # test_football_team = Football_Team(football_team_name = "Barcelona")
@@ -87,3 +96,8 @@ class TestViews(TestBase):
     #     )
 
     #     assert "Football Team Added!" in response.data.decode()
+
+    class TestAdd(TestBase):
+        def test_add_football_team(self):
+            response = self.client.post(url_for('add_football_team'))
+            assert 'Football_Team_added' in response.data.decode()

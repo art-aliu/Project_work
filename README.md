@@ -59,7 +59,7 @@ Image taken from images can be found on this link
 
 Risk assessment revealing possible threats to the project
 
-![image](https://user-images.githubusercontent.com/101266740/162637794-71f5f53d-c323-435e-b6d0-2bdcb5bd0081.png)
+![image](https://user-images.githubusercontent.com/101266740/163995035-791b036b-188b-400d-963f-55503097b100.png)
 
 ## Project Tracking
 

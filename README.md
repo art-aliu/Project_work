@@ -50,7 +50,9 @@ As shown in the ERD, the app models a one to many relationship between the footb
 ![image](https://user-images.githubusercontent.com/101266740/162721480-d7f6898d-3032-4530-97b9-72efdea6d703.png)
 
 
-Pictured above is the continuous integration pipeline with the associated frameworks. This pipeline shows the simple development-to-deployment by automating the integration process
+Pictured above is the continuous integration pipeline with the associated frameworks. This pipeline shows the simple development-to-deployment by automating the integration process.
+
+![image](https://user-images.githubusercontent.com/101266740/164031029-e27f326e-e3bd-4828-8ce5-27ddd4bf8e34.png)
 
 https://qa-community.co.uk/~/_/learning/devops/devops--continuous-integration
 Image taken from images can be found on this link 

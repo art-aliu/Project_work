@@ -137,4 +137,5 @@ As seen below, the app passes all the tests run. The tests can be found in the t
 
 - Credit to w3schools for their basic navbar HTML code utilising CSS provided by Bootstrap3.
 - Thanks to Earl Gray for his high quality teaching
+- Thank you also to Leon Robinson for stepping in for a few days to provide us support aswell as Harry Volker to being available to answer our questions
 
